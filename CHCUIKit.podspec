@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CHCUIKit'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'A short description of CHCUIKit.'
 
 # This description is used to generate tags and improve search results.
@@ -21,14 +21,15 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/陈鸿城/CHCUIKit'
+  s.homepage         = 'https://github.com/cheng9112/CHCUIKit'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { '陈鸿城' => 'cheng9112@icloud.com' }
-  s.source           = { :git => 'https://github.com/陈鸿城/CHCUIKit.git', :tag => s.version.to_s }
+  s.author           = { 'cheng' => 'cheng9112@icloud.com' }
+  s.source           = { :git => 'https://github.com/cheng9112/CHCUIKit.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '10.0'
+  s.swift_version = '5.0'
 
   s.source_files = 'CHCUIKit/Classes/**/*'
   
