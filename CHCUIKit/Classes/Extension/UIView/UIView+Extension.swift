@@ -32,6 +32,13 @@ public extension UIView {
         return nil
     }
     
+    /// 快捷添加点击事件
+    func addTap(target: Any? , action: Selector?) {
+        self.isUserInteractionEnabled = true
+        let tap = UITapGestureRecognizer(target: target, action: action)
+        self.addGestureRecognizer(tap)
+    }
+    
     /// 加载nib
     class func loadFromNib(named name: String, bundle: Bundle? = nil) -> UIView? {
         return UINib(nibName: name, bundle: bundle).instantiate(withOwner: nil, options: nil)[0] as? UIView
