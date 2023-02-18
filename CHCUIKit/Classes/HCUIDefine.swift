@@ -47,14 +47,14 @@ public let mScreenHeight = max(UIScreen.main.bounds.size.width, UIScreen.main.bo
 /// 屏幕rect
 public let mScreenRect = CGRect(x: 0, y: 0, width: mScreenWidth, height: mScreenHeight)
 /// 状态栏高度
-public let mStatusBarHeight: CGFloat = IsAllScreen ? 44.0 : 20.0
+public let mStatusBarHeight: CGFloat = DeviceInfo.statusBarHeight()
 /// 导航栏高度
-public let mNavBarHeight: CGFloat = 44.0
+public let mNavBarHeight: CGFloat = DeviceInfo.navigationBarHeight()
 /// 导航栏+状态栏高度
 public let mTopHeight = mStatusBarHeight + mNavBarHeight
 /// 底部安全距离
-public let mSafeBottomMargin: CGFloat = IsAllScreen ? 34 : 0
+public let mSafeBottomMargin: CGFloat = DeviceInfo.safeDistanceBottom()
 /// tabbar高度
-public let mTabBarHeight: CGFloat = IsAllScreen ? 83 : 49
+public let mTabBarHeight: CGFloat = DeviceInfo.tabBarFullHeight()
 
 
